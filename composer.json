@@ -2,7 +2,7 @@
   "name": "nickdavis/five9-modal",
   "description": "Adds 'click to open' functionality for Five9 chat. Requires the official Five9 WordPress plugin or the Five9 chat widget scripts to be loaded in some other way",
   "type": "wordpress-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minimum-stability": "stable",
   "license": "MIT",
   "authors": [
