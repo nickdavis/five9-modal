@@ -1,8 +1,12 @@
-jQuery(function ($) {
-    $(function () {
-        $('.five9-modal__trigger').click(function (event) {
-            event.preventDefault();
-            $('#five9-maximize-button').trigger('click');
-        });
+document.addEventListener("DOMContentLoaded", function() {
+    const chat_trigger = document.querySelector('.five9-modal__trigger');
+
+    chat_trigger.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        const chat_target = document.getElementById( 'five9-maximize-button' );
+        document.dispatchEvent(new Event("click"));
+        chat_target.dispatchEvent(new Event("click"));
+
     });
 });

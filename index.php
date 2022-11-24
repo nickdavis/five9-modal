@@ -51,7 +51,7 @@ function enqueue_script(): void {
 	$js_uri     = ND_FIVE9_MODAL_URL . $js_path;
 	$js_version = filemtime( ND_FIVE9_MODAL_DIR . $js_path );
 
-	wp_enqueue_script( 'nd-five9-modal', $js_uri, [ 'jquery' ], $js_version );
+	wp_enqueue_script( 'nd-five9-modal', $js_uri, [], $js_version );
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_styles' );
