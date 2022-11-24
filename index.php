@@ -4,7 +4,7 @@ Plugin Name: Five9 - Modal
 Plugin URI: https://github.com/nickdavis/five9-modal
 Description: Adds 'click to open' functionality for Five9 chat. Requires the official Five9 WordPress plugin or the Five9 chat widget scripts to be loaded in some other way.
 Author: Nick Davis
-Version: 1.0.1
+Version: 1.1.0
 Author URI: https://nickdavis.net
 */
 
@@ -29,7 +29,6 @@ function constants() {
 		$plugin_url = str_replace( 'http://', 'https://', $plugin_url );
 	}
 
-	define( 'ND_FIVE9_MODAL_VERSION', '1.0.0' );
 	define( 'ND_FIVE9_MODAL_DIR', trailingslashit( plugin_dir_path( __FILE__ ) ) );
 	define( 'ND_FIVE9_MODAL_URL', $plugin_url );
 	define( 'ND_FIVE9_MODAL_FILE', __FILE__ );
